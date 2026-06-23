@@ -1,0 +1,73 @@
+2026-06-23 11:36:38 [task-2] INFO  com.trung.coinpricetracker.BinanceService - Giá ETHUSDT không đổi: 1724.0
+2026-06-23 11:36:38 [task-3] INFO  com.trung.coinpricetracker.BinanceService - Giá BNBUSDT không đổi: 589.28
+2026-06-23 11:36:38 [task-1] INFO  com.trung.coinpricetracker.BinanceService - Giá BTCUSDT không đổi: 63880.0
+2026-06-23 11:36:41 [task-2] INFO  com.trung.coinpricetracker.BinanceService - Giá ETHUSDT không đổi: 1724.0
+2026-06-23 11:36:41 [task-1] INFO  com.trung.coinpricetracker.BinanceService - Giá BTCUSDT không đổi: 63880.0
+2026-06-23 11:36:41 [task-3] WARN  com.trung.coinpricetracker.BinanceService - 🚨 PHÁT HIỆN BIẾN ĐỘNG GIÁ: BNBUSDT từ 589.28 -> 589.33
+2026-06-23 11:36:42 [task-3] INFO  com.trung.coinpricetracker.BinanceService - [TELEGRAM] Đã gửi thông báo thành công cho BNBUSDT
+2026-06-23 11:36:44 [task-2] INFO  com.trung.coinpricetracker.BinanceService - Giá ETHUSDT không đổi: 1724.0
+2026-06-23 11:36:44 [task-1] INFO  com.trung.coinpricetracker.BinanceService - Giá BTCUSDT không đổi: 63880.0
+2026-06-23 11:36:45 [task-3] WARN  com.trung.coinpricetracker.BinanceService - 🚨 PHÁT HIỆN BIẾN ĐỘNG GIÁ: BNBUSDT từ 589.33 -> 589.22
+2026-06-23 11:36:46 [task-3] INFO  com.trung.coinpricetracker.BinanceService - [TELEGRAM] Đã gửi thông báo thành công cho BNBUSDT
+2026-06-23 11:36:47 [task-2] INFO  com.trung.coinpricetracker.BinanceService - Giá ETHUSDT không đổi: 1724.0
+2026-06-23 11:36:47 [task-1] WARN  com.trung.coinpricetracker.BinanceService - 🚨 PHÁT HIỆN BIẾN ĐỘNG GIÁ: BTCUSDT từ 63880.0 -> 63880.01
+2026-06-23 11:36:48 [task-1] INFO  com.trung.coinpricetracker.BinanceService - [TELEGRAM] Đã gửi thông báo thành công cho BTCUSDT
+2026-06-23 11:36:49 [task-3] INFO  com.trung.coinpricetracker.BinanceService - Giá BNBUSDT không đổi: 589.22
+2026-06-23 11:36:51 [task-2] INFO  com.trung.coinpricetracker.BinanceService - Giá ETHUSDT không đổi: 1724.0
+2026-06-23 11:36:51 [task-1] WARN  com.trung.coinpricetracker.BinanceService - 🚨 PHÁT HIỆN BIẾN ĐỘNG GIÁ: BTCUSDT từ 63880.01 -> 63874.56
+2026-06-23 11:36:51 [task-1] INFO  com.trung.coinpricetracker.BinanceService - [TELEGRAM] Đã gửi thông báo thành công cho BTCUSDT
+2026-06-23 11:36:52 [task-3] INFO  com.trung.coinpricetracker.BinanceService - Giá BNBUSDT không đổi: 589.22
+2026-06-23 11:36:54 [task-2] WARN  com.trung.coinpricetracker.BinanceService - 🚨 PHÁT HIỆN BIẾN ĐỘNG GIÁ: ETHUSDT từ 1724.0 -> 1723.84
+2026-06-23 11:36:54 [task-2] INFO  com.trung.coinpricetracker.BinanceService - [TELEGRAM] Đã gửi thông báo thành công cho ETHUSDT
+2026-06-23 11:36:55 [task-1] WARN  com.trung.coinpricetracker.BinanceService - 🚨 PHÁT HIỆN BIẾN ĐỘNG GIÁ: BTCUSDT từ 63874.56 -> 63874.55
+2026-06-23 12:05:03 [task-2] INFO  com.trung.coinpricetracker.BinanceService - Giá ETHUSDT không đổi (Retrofit): 1720.48
+2026-06-23 12:05:03 [task-1] INFO  com.trung.coinpricetracker.BinanceService - Giá BTCUSDT không đổi (Retrofit): 63653.18
+2026-06-23 12:05:03 [task-3] INFO  com.trung.coinpricetracker.BinanceService - Giá BNBUSDT không đổi (Retrofit): 587.57
+2026-06-23 12:05:06 [task-1] WARN  com.trung.coinpricetracker.BinanceService - 🚨 PHÁT HIỆN BIẾN ĐỘNG GIÁ (RETROFIT): BTCUSDT từ 63653.18 -> 63657.76
+2026-06-23 12:05:06 [task-2] WARN  com.trung.coinpricetracker.BinanceService - 🚨 PHÁT HIỆN BIẾN ĐỘNG GIÁ (RETROFIT): ETHUSDT từ 1720.48 -> 1720.5
+2026-06-23 12:05:06 [task-3] INFO  com.trung.coinpricetracker.BinanceService - Giá BNBUSDT không đổi (Retrofit): 587.57
+2026-06-23 12:05:07 [task-2] INFO  com.trung.coinpricetracker.BinanceService - [TELEGRAM] Đã gửi thông báo thành công cho ETHUSDT
+2026-06-23 12:05:07 [task-1] INFO  com.trung.coinpricetracker.BinanceService - [TELEGRAM] Đã gửi thông báo thành công cho BTCUSDT
+2026-06-23 12:05:09 [task-3] WARN  com.trung.coinpricetracker.BinanceService - 🚨 PHÁT HIỆN BIẾN ĐỘNG GIÁ (RETROFIT): BNBUSDT từ 587.57 -> 587.56
+2026-06-23 14:40:14 [task-3] INFO  com.trung.coinpricetracker.BinanceService - Giá BNBUSDT không đổi (Retrofit): 581.56
+2026-06-23 14:40:14 [task-1] INFO  com.trung.coinpricetracker.BinanceService - Giá BTCUSDT không đổi (Retrofit): 63002.0
+2026-06-23 14:40:14 [task-2] INFO  com.trung.coinpricetracker.BinanceService - Giá ETHUSDT không đổi (Retrofit): 1690.41
+2026-06-23 14:40:18 [task-3] WARN  com.trung.coinpricetracker.BinanceService - 🚨 PHÁT HIỆN BIẾN ĐỘNG GIÁ (RETROFIT): BNBUSDT từ 581.56 -> 581.57
+2026-06-23 14:40:18 [task-3] ERROR com.trung.coinpricetracker.BinanceService - Lỗi xử lý luồng BNBUSDT: Malformed URL. Base: https://api.telegram.org/, Relative: bot8984573120:AAHNUacQ6wk-dExt-EX1oQz7VpbDQrzJkzE/sendMessage
+2026-06-23 14:40:18 [task-2] WARN  com.trung.coinpricetracker.BinanceService - 🚨 PHÁT HIỆN BIẾN ĐỘNG GIÁ (RETROFIT): ETHUSDT từ 1690.41 -> 1690.17
+2026-06-23 14:40:18 [task-1] WARN  com.trung.coinpricetracker.BinanceService - 🚨 PHÁT HIỆN BIẾN ĐỘNG GIÁ (RETROFIT): BTCUSDT từ 63002.0 -> 63002.52
+2026-06-23 14:40:18 [task-2] ERROR com.trung.coinpricetracker.BinanceService - Lỗi xử lý luồng ETHUSDT: Malformed URL. Base: https://api.telegram.org/, Relative: bot8984573120:AAHNUacQ6wk-dExt-EX1oQz7VpbDQrzJkzE/sendMessage
+2026-06-23 14:40:18 [task-1] ERROR com.trung.coinpricetracker.BinanceService - Lỗi xử lý luồng BTCUSDT: Malformed URL. Base: https://api.telegram.org/, Relative: bot8984573120:AAHNUacQ6wk-dExt-EX1oQz7VpbDQrzJkzE/sendMessage
+2026-06-23 14:40:21 [task-3] WARN  com.trung.coinpricetracker.BinanceService - 🚨 PHÁT HIỆN BIẾN ĐỘNG GIÁ (RETROFIT): BNBUSDT từ 581.56 -> 581.57
+2026-06-23 14:40:21 [task-3] ERROR com.trung.coinpricetracker.BinanceService - Lỗi xử lý luồng BNBUSDT: Malformed URL. Base: https://api.telegram.org/, Relative: bot8984573120:AAHNUacQ6wk-dExt-EX1oQz7VpbDQrzJkzE/sendMessage
+2026-06-23 14:40:21 [task-2] WARN  com.trung.coinpricetracker.BinanceService - 🚨 PHÁT HIỆN BIẾN ĐỘNG GIÁ (RETROFIT): ETHUSDT từ 1690.41 -> 1690.17
+2026-06-23 14:40:21 [task-2] ERROR com.trung.coinpricetracker.BinanceService - Lỗi xử lý luồng ETHUSDT: Malformed URL. Base: https://api.telegram.org/, Relative: bot8984573120:AAHNUacQ6wk-dExt-EX1oQz7VpbDQrzJkzE/sendMessage
+2026-06-23 14:40:21 [task-1] WARN  com.trung.coinpricetracker.BinanceService - 🚨 PHÁT HIỆN BIẾN ĐỘNG GIÁ (RETROFIT): BTCUSDT từ 63002.0 -> 63002.52
+2026-06-23 14:40:21 [task-1] ERROR com.trung.coinpricetracker.BinanceService - Lỗi xử lý luồng BTCUSDT: Malformed URL. Base: https://api.telegram.org/, Relative: bot8984573120:AAHNUacQ6wk-dExt-EX1oQz7VpbDQrzJkzE/sendMessage
+2026-06-23 14:40:24 [task-3] WARN  com.trung.coinpricetracker.BinanceService - 🚨 PHÁT HIỆN BIẾN ĐỘNG GIÁ (RETROFIT): BNBUSDT từ 581.56 -> 581.57
+2026-06-23 14:40:24 [task-3] ERROR com.trung.coinpricetracker.BinanceService - Lỗi xử lý luồng BNBUSDT: Malformed URL. Base: https://api.telegram.org/, Relative: bot8984573120:AAHNUacQ6wk-dExt-EX1oQz7VpbDQrzJkzE/sendMessage
+2026-06-23 14:40:24 [task-2] WARN  com.trung.coinpricetracker.BinanceService - 🚨 PHÁT HIỆN BIẾN ĐỘNG GIÁ (RETROFIT): ETHUSDT từ 1690.41 -> 1690.17
+2026-06-23 14:40:24 [task-2] ERROR com.trung.coinpricetracker.BinanceService - Lỗi xử lý luồng ETHUSDT: Malformed URL. Base: https://api.telegram.org/, Relative: bot8984573120:AAHNUacQ6wk-dExt-EX1oQz7VpbDQrzJkzE/sendMessage
+2026-06-23 14:40:24 [task-1] WARN  com.trung.coinpricetracker.BinanceService - 🚨 PHÁT HIỆN BIẾN ĐỘNG GIÁ (RETROFIT): BTCUSDT từ 63002.0 -> 63002.52
+2026-06-23 14:40:24 [task-1] ERROR com.trung.coinpricetracker.BinanceService - Lỗi xử lý luồng BTCUSDT: Malformed URL. Base: https://api.telegram.org/, Relative: bot8984573120:AAHNUacQ6wk-dExt-EX1oQz7VpbDQrzJkzE/sendMessage
+2026-06-23 14:40:27 [task-3] WARN  com.trung.coinpricetracker.BinanceService - 🚨 PHÁT HIỆN BIẾN ĐỘNG GIÁ (RETROFIT): BNBUSDT từ 581.56 -> 581.51
+2026-06-23 14:40:27 [task-3] ERROR com.trung.coinpricetracker.BinanceService - Lỗi xử lý luồng BNBUSDT: Malformed URL. Base: https://api.telegram.org/, Relative: bot8984573120:AAHNUacQ6wk-dExt-EX1oQz7VpbDQrzJkzE/sendMessage
+2026-06-23 14:40:27 [task-2] WARN  com.trung.coinpricetracker.BinanceService - 🚨 PHÁT HIỆN BIẾN ĐỘNG GIÁ (RETROFIT): ETHUSDT từ 1690.41 -> 1690.16
+2026-06-23 14:40:27 [task-2] ERROR com.trung.coinpricetracker.BinanceService - Lỗi xử lý luồng ETHUSDT: Malformed URL. Base: https://api.telegram.org/, Relative: bot8984573120:AAHNUacQ6wk-dExt-EX1oQz7VpbDQrzJkzE/sendMessage
+2026-06-23 14:40:27 [task-1] WARN  com.trung.coinpricetracker.BinanceService - 🚨 PHÁT HIỆN BIẾN ĐỘNG GIÁ (RETROFIT): BTCUSDT từ 63002.0 -> 62996.01
+2026-06-23 14:40:27 [task-1] ERROR com.trung.coinpricetracker.BinanceService - Lỗi xử lý luồng BTCUSDT: Malformed URL. Base: https://api.telegram.org/, Relative: bot8984573120:AAHNUacQ6wk-dExt-EX1oQz7VpbDQrzJkzE/sendMessage
+2026-06-23 14:40:30 [task-3] WARN  com.trung.coinpricetracker.BinanceService - 🚨 PHÁT HIỆN BIẾN ĐỘNG GIÁ (RETROFIT): BNBUSDT từ 581.56 -> 581.51
+2026-06-23 14:40:30 [task-3] ERROR com.trung.coinpricetracker.BinanceService - Lỗi xử lý luồng BNBUSDT: Malformed URL. Base: https://api.telegram.org/, Relative: bot8984573120:AAHNUacQ6wk-dExt-EX1oQz7VpbDQrzJkzE/sendMessage
+2026-06-23 14:40:30 [task-2] WARN  com.trung.coinpricetracker.BinanceService - 🚨 PHÁT HIỆN BIẾN ĐỘNG GIÁ (RETROFIT): ETHUSDT từ 1690.41 -> 1690.03
+2026-06-23 14:40:30 [task-2] ERROR com.trung.coinpricetracker.BinanceService - Lỗi xử lý luồng ETHUSDT: Malformed URL. Base: https://api.telegram.org/, Relative: bot8984573120:AAHNUacQ6wk-dExt-EX1oQz7VpbDQrzJkzE/sendMessage
+2026-06-23 14:40:30 [task-1] WARN  com.trung.coinpricetracker.BinanceService - 🚨 PHÁT HIỆN BIẾN ĐỘNG GIÁ (RETROFIT): BTCUSDT từ 63002.0 -> 62975.73
+2026-06-23 14:40:30 [task-1] ERROR com.trung.coinpricetracker.BinanceService - Lỗi xử lý luồng BTCUSDT: Malformed URL. Base: https://api.telegram.org/, Relative: bot8984573120:AAHNUacQ6wk-dExt-EX1oQz7VpbDQrzJkzE/sendMessage
+2026-06-23 14:43:30 [task-1] INFO  com.trung.coinpricetracker.BinanceService - Giá BTCUSDT không đổi (Retrofit): 62953.44
+2026-06-23 14:43:30 [task-3] INFO  com.trung.coinpricetracker.BinanceService - Giá BNBUSDT không đổi (Retrofit): 581.51
+2026-06-23 14:43:30 [task-2] INFO  com.trung.coinpricetracker.BinanceService - Giá ETHUSDT không đổi (Retrofit): 1689.0
+2026-06-23 14:43:33 [task-3] WARN  com.trung.coinpricetracker.BinanceService - 🚨 PHÁT HIỆN BIẾN ĐỘNG GIÁ (RETROFIT): BNBUSDT từ 581.51 -> 581.52
+2026-06-23 14:43:33 [task-1] WARN  com.trung.coinpricetracker.BinanceService - 🚨 PHÁT HIỆN BIẾN ĐỘNG GIÁ (RETROFIT): BTCUSDT từ 62953.44 -> 62953.45
+2026-06-23 14:43:33 [task-2] WARN  com.trung.coinpricetracker.BinanceService - 🚨 PHÁT HIỆN BIẾN ĐỘNG GIÁ (RETROFIT): ETHUSDT từ 1689.0 -> 1688.85
+2026-06-23 14:43:34 [task-1] INFO  com.trung.coinpricetracker.BinanceService - [TELEGRAM-RETROFIT] Đã gửi thông báo thành công cho BTCUSDT
+2026-06-23 14:43:34 [task-2] INFO  com.trung.coinpricetracker.BinanceService - [TELEGRAM-RETROFIT] Đã gửi thông báo thành công cho ETHUSDT
+2026-06-23 14:43:34 [task-3] INFO  com.trung.coinpricetracker.BinanceService - [TELEGRAM-RETROFIT] Đã gửi thông báo thành công cho BNBUSDT

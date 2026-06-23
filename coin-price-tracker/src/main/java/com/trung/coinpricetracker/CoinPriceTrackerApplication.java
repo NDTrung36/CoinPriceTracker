@@ -4,12 +4,14 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.scheduling.annotation.EnableAsync;
+import lombok.extern.log4j.Log4j2;
 
 import java.util.Arrays;
 import java.util.List;
 
 @SpringBootApplication
 @EnableAsync // (1) Bật "công tắc" cho phép ứng dụng chạy đa luồng
+@Log4j2
 public class CoinPriceTrackerApplication implements CommandLineRunner {
 
 	private final BinanceService binanceService;
@@ -28,7 +30,7 @@ public class CoinPriceTrackerApplication implements CommandLineRunner {
 		// (3) Tạo một danh sách các loại coin muốn theo dõi
 		List<String> coins = Arrays.asList("BTCUSDT", "ETHUSDT", "BNBUSDT");
 
-		System.out.println("Bắt đầu khởi động các luồng theo dõi coin...");
+		log.info("Bắt đầu khởi động các luồng theo dõi coin...");
 
 		// (4) Dùng vòng lặp gọi service cho từng coin
 		for (String coin : coins) {
