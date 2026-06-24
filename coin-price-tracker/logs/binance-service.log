@@ -1,0 +1,49 @@
+2026-06-24 09:50:58 [task-2] INFO  com.trung.coinpricetracker.BinanceService - Giá ETHUSDT không ??i (Retrofit): 1666.09
+2026-06-24 09:50:58 [task-1] INFO  com.trung.coinpricetracker.BinanceService - Giá BTCUSDT không ??i (Retrofit): 62702.16
+2026-06-24 09:50:58 [task-3] INFO  com.trung.coinpricetracker.BinanceService - Giá BNBUSDT không ??i (Retrofit): 578.38
+2026-06-24 09:51:01 [task-2] WARN  com.trung.coinpricetracker.BinanceService - ? PHÁT HI?N BI?N ??NG GIÁ (RETROFIT): ETHUSDT t? 1666.09 -> 1666.1
+2026-06-24 09:51:01 [task-3] WARN  com.trung.coinpricetracker.BinanceService - ? PHÁT HI?N BI?N ??NG GIÁ (RETROFIT): BNBUSDT t? 578.38 -> 578.37
+2026-06-24 09:51:01 [task-1] WARN  com.trung.coinpricetracker.BinanceService - ? PHÁT HI?N BI?N ??NG GIÁ (RETROFIT): BTCUSDT t? 62702.16 -> 62702.17
+2026-06-24 09:51:03 [task-2] INFO  com.trung.coinpricetracker.BinanceService - [TELEGRAM-RETROFIT] ?ã g?i thông báo thành công cho ETHUSDT
+2026-06-24 09:51:03 [task-3] INFO  com.trung.coinpricetracker.BinanceService - [TELEGRAM-RETROFIT] ?ã g?i thông báo thành công cho BNBUSDT
+2026-06-24 09:51:03 [task-1] INFO  com.trung.coinpricetracker.BinanceService - [TELEGRAM-RETROFIT] ?ã g?i thông báo thành công cho BTCUSDT
+2026-06-24 09:51:06 [task-2] WARN  com.trung.coinpricetracker.BinanceService - ? PHÁT HI?N BI?N ??NG GIÁ (RETROFIT): ETHUSDT t? 1666.1 -> 1665.82
+2026-06-24 09:51:06 [task-3] WARN  com.trung.coinpricetracker.BinanceService - ? PHÁT HI?N BI?N ??NG GIÁ (RETROFIT): BNBUSDT t? 578.37 -> 578.38
+2026-06-24 09:51:06 [task-1] WARN  com.trung.coinpricetracker.BinanceService - ? PHÁT HI?N BI?N ??NG GIÁ (RETROFIT): BTCUSDT t? 62702.17 -> 62702.01
+2026-06-24 09:51:07 [task-2] INFO  com.trung.coinpricetracker.BinanceService - [TELEGRAM-RETROFIT] ?ã g?i thông báo thành công cho ETHUSDT
+2026-06-24 09:51:07 [task-3] INFO  com.trung.coinpricetracker.BinanceService - [TELEGRAM-RETROFIT] ?ã g?i thông báo thành công cho BNBUSDT
+2026-06-24 09:51:07 [task-1] INFO  com.trung.coinpricetracker.BinanceService - [TELEGRAM-RETROFIT] ?ã g?i thông báo thành công cho BTCUSDT
+2026-06-24 09:51:10 [task-2] WARN  com.trung.coinpricetracker.BinanceService - ? PHÁT HI?N BI?N ??NG GIÁ (RETROFIT): ETHUSDT t? 1665.82 -> 1665.65
+2026-06-24 09:51:10 [task-3] WARN  com.trung.coinpricetracker.BinanceService - ? PHÁT HI?N BI?N ??NG GIÁ (RETROFIT): BNBUSDT t? 578.38 -> 578.25
+2026-06-24 09:51:10 [task-1] WARN  com.trung.coinpricetracker.BinanceService - ? PHÁT HI?N BI?N ??NG GIÁ (RETROFIT): BTCUSDT t? 62702.01 -> 62698.34
+2026-06-24 09:51:10 [task-2] INFO  com.trung.coinpricetracker.BinanceService - [TELEGRAM-RETROFIT] ?ã g?i thông báo thành công cho ETHUSDT
+2026-06-24 09:51:10 [task-3] INFO  com.trung.coinpricetracker.BinanceService - [TELEGRAM-RETROFIT] ?ã g?i thông báo thành công cho BNBUSDT
+2026-06-24 09:51:11 [task-1] INFO  com.trung.coinpricetracker.BinanceService - [TELEGRAM-RETROFIT] ?ã g?i thông báo thành công cho BTCUSDT
+2026-06-24 09:51:13 [task-2] WARN  com.trung.coinpricetracker.BinanceService - ? PHÁT HI?N BI?N ??NG GIÁ (RETROFIT): ETHUSDT t? 1665.65 -> 1665.64
+2026-06-24 09:51:13 [task-3] INFO  com.trung.coinpricetracker.BinanceService - Giá BNBUSDT không ??i (Retrofit): 578.25
+2026-06-24 09:51:14 [task-2] INFO  com.trung.coinpricetracker.BinanceService - [TELEGRAM-RETROFIT] ?ã g?i thông báo thành công cho ETHUSDT
+2026-06-24 09:51:14 [task-1] WARN  com.trung.coinpricetracker.BinanceService - ? PHÁT HI?N BI?N ??NG GIÁ (RETROFIT): BTCUSDT t? 62698.34 -> 62698.35
+2026-06-24 09:51:14 [task-1] INFO  com.trung.coinpricetracker.BinanceService - [TELEGRAM-RETROFIT] ?ã g?i thông báo thành công cho BTCUSDT
+2026-06-24 09:51:17 [task-3] WARN  com.trung.coinpricetracker.BinanceService - ? PHÁT HI?N BI?N ??NG GIÁ (RETROFIT): BNBUSDT t? 578.25 -> 578.26
+2026-06-24 09:51:17 [task-2] WARN  com.trung.coinpricetracker.BinanceService - ? PHÁT HI?N BI?N ??NG GIÁ (RETROFIT): ETHUSDT t? 1665.64 -> 1666.08
+2026-06-24 09:51:17 [task-3] INFO  com.trung.coinpricetracker.BinanceService - [TELEGRAM-RETROFIT] ?ã g?i thông báo thành công cho BNBUSDT
+2026-06-24 09:51:17 [task-2] INFO  com.trung.coinpricetracker.BinanceService - [TELEGRAM-RETROFIT] ?ã g?i thông báo thành công cho ETHUSDT
+2026-06-24 09:51:17 [task-1] WARN  com.trung.coinpricetracker.BinanceService - ? PHÁT HI?N BI?N ??NG GIÁ (RETROFIT): BTCUSDT t? 62698.35 -> 62702.17
+2026-06-24 09:51:18 [task-1] INFO  com.trung.coinpricetracker.BinanceService - [TELEGRAM-RETROFIT] ?ã g?i thông báo thành công cho BTCUSDT
+2026-06-24 09:51:20 [task-3] WARN  com.trung.coinpricetracker.BinanceService - ? PHÁT HI?N BI?N ??NG GIÁ (RETROFIT): BNBUSDT t? 578.26 -> 578.27
+2026-06-24 09:51:20 [task-2] WARN  com.trung.coinpricetracker.BinanceService - ? PHÁT HI?N BI?N ??NG GIÁ (RETROFIT): ETHUSDT t? 1666.08 -> 1666.29
+2026-06-24 09:51:21 [task-3] INFO  com.trung.coinpricetracker.BinanceService - [TELEGRAM-RETROFIT] ?ã g?i thông báo thành công cho BNBUSDT
+2026-06-24 09:51:21 [task-2] INFO  com.trung.coinpricetracker.BinanceService - [TELEGRAM-RETROFIT] ?ã g?i thông báo thành công cho ETHUSDT
+2026-06-24 09:51:21 [task-1] WARN  com.trung.coinpricetracker.BinanceService - ? PHÁT HI?N BI?N ??NG GIÁ (RETROFIT): BTCUSDT t? 62702.17 -> 62706.0
+2026-06-24 09:51:21 [task-1] INFO  com.trung.coinpricetracker.BinanceService - [TELEGRAM-RETROFIT] ?ã g?i thông báo thành công cho BTCUSDT
+2026-06-24 09:51:24 [task-3] WARN  com.trung.coinpricetracker.BinanceService - ? PHÁT HI?N BI?N ??NG GIÁ (RETROFIT): BNBUSDT t? 578.27 -> 578.26
+2026-06-24 09:51:24 [task-2] WARN  com.trung.coinpricetracker.BinanceService - ? PHÁT HI?N BI?N ??NG GIÁ (RETROFIT): ETHUSDT t? 1666.29 -> 1666.3
+2026-06-24 09:51:24 [task-3] INFO  com.trung.coinpricetracker.BinanceService - [TELEGRAM-RETROFIT] ?ã g?i thông báo thành công cho BNBUSDT
+2026-06-24 09:51:24 [task-2] INFO  com.trung.coinpricetracker.BinanceService - [TELEGRAM-RETROFIT] ?ã g?i thông báo thành công cho ETHUSDT
+2026-06-24 09:51:25 [task-1] WARN  com.trung.coinpricetracker.BinanceService - ? PHÁT HI?N BI?N ??NG GIÁ (RETROFIT): BTCUSDT t? 62706.0 -> 62705.99
+2026-06-24 09:51:25 [task-1] INFO  com.trung.coinpricetracker.BinanceService - [TELEGRAM-RETROFIT] ?ã g?i thông báo thành công cho BTCUSDT
+2026-06-24 09:51:27 [task-3] WARN  com.trung.coinpricetracker.BinanceService - ? PHÁT HI?N BI?N ??NG GIÁ (RETROFIT): BNBUSDT t? 578.26 -> 578.52
+2026-06-24 09:51:28 [task-2] WARN  com.trung.coinpricetracker.BinanceService - ? PHÁT HI?N BI?N ??NG GIÁ (RETROFIT): ETHUSDT t? 1666.3 -> 1666.88
+2026-06-24 09:51:28 [task-3] INFO  com.trung.coinpricetracker.BinanceService - [TELEGRAM-RETROFIT] ?ã g?i thông báo thành công cho BNBUSDT
+2026-06-24 09:51:28 [task-2] INFO  com.trung.coinpricetracker.BinanceService - [TELEGRAM-RETROFIT] ?ã g?i thông báo thành công cho ETHUSDT
+2026-06-24 09:51:28 [task-1] WARN  com.trung.coinpricetracker.BinanceService - ? PHÁT HI?N BI?N ??NG GIÁ (RETROFIT): BTCUSDT t? 62705.99 -> 62744.33
