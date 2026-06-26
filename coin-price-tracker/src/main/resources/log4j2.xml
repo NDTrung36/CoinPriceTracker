@@ -16,17 +16,17 @@
     </Appenders>
 
     <Loggers>
+        <Root level="info">
+            <AppenderRef ref="ConsoleAppender" />
+            <AppenderRef ref="GeneralLogFile" />
+        </Root>
+
         <Logger name="com.trung.coinpricetracker.BinanceService" level="info" additivity="false">
             <AppenderRef ref="BinanceLogFile" />
             <AppenderRef ref="ConsoleAppender" />
         </Logger>
 
         <Logger name="org.springframework" level="warn" />
-
-        <Root level="info">
-            <AppenderRef ref="ConsoleAppender" />
-            <AppenderRef ref="GeneralLogFile" />
-        </Root>
     </Loggers>
 
 </Configuration>

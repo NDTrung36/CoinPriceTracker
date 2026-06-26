@@ -99,3 +99,57 @@
 2026-06-23 14:43:30 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
 2026-06-23 14:43:30 [main] INFO  com.trung.coinpricetracker.CoinPriceTrackerApplication - Started CoinPriceTrackerApplication in 1.554 seconds (process running for 2.234)
 2026-06-23 14:43:30 [main] INFO  com.trung.coinpricetracker.CoinPriceTrackerApplication - Bắt đầu khởi động các luồng theo dõi coin...
+2026-06-26 11:06:44 [main] INFO  com.trung.coinpricetracker.CoinPriceTrackerApplication - Starting CoinPriceTrackerApplication using Java 17.0.12 with PID 11256 (D:\coin-price-tracker\coin-price-tracker\target\classes started by admin in D:\coin-price-tracker)
+2026-06-26 11:06:44 [main] INFO  com.trung.coinpricetracker.CoinPriceTrackerApplication - No active profile set, falling back to 1 default profile: "default"
+2026-06-26 11:06:45 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-06-26 11:06:45 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-06-26 11:06:45 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.55]
+2026-06-26 11:06:45 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-06-26 11:06:45 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-06-26 11:06:45 [main] INFO  com.trung.coinpricetracker.CoinPriceTrackerApplication - Started CoinPriceTrackerApplication in 1.641 seconds (process running for 2.281)
+2026-06-26 11:06:45 [main] INFO  com.trung.coinpricetracker.CoinPriceTrackerApplication - Hệ thống Coin Tracker đã khởi động thành công!
+2026-06-26 11:08:38 [main] INFO  com.trung.coinpricetracker.CoinPriceTrackerApplication - Starting CoinPriceTrackerApplication using Java 17.0.12 with PID 15344 (D:\coin-price-tracker\coin-price-tracker\target\classes started by admin in D:\coin-price-tracker)
+2026-06-26 11:08:38 [main] INFO  com.trung.coinpricetracker.CoinPriceTrackerApplication - No active profile set, falling back to 1 default profile: "default"
+2026-06-26 11:08:39 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-06-26 11:08:39 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-06-26 11:08:39 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.55]
+2026-06-26 11:08:39 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-06-26 11:08:39 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-06-26 11:08:39 [main] INFO  com.trung.coinpricetracker.CoinPriceTrackerApplication - Started CoinPriceTrackerApplication in 1.541 seconds (process running for 2.17)
+2026-06-26 11:08:39 [main] INFO  com.trung.coinpricetracker.CoinPriceTrackerApplication - Hệ thống Coin Tracker đã khởi động thành công!
+2026-06-26 11:09:40 [main] INFO  com.trung.coinpricetracker.CoinPriceTrackerApplication - Starting CoinPriceTrackerApplication using Java 17.0.12 with PID 17332 (D:\coin-price-tracker\coin-price-tracker\target\classes started by admin in D:\coin-price-tracker)
+2026-06-26 11:09:40 [main] INFO  com.trung.coinpricetracker.CoinPriceTrackerApplication - No active profile set, falling back to 1 default profile: "default"
+2026-06-26 11:09:41 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-06-26 11:09:41 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-06-26 11:09:41 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.55]
+2026-06-26 11:09:41 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-06-26 11:09:42 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-06-26 11:09:42 [main] INFO  com.trung.coinpricetracker.CoinPriceTrackerApplication - Started CoinPriceTrackerApplication in 1.702 seconds (process running for 2.335)
+2026-06-26 11:09:42 [main] INFO  com.trung.coinpricetracker.CoinPriceTrackerApplication - Hệ thống Coin Tracker đã khởi động thành công!
+2026-06-26 11:11:28 [main] INFO  com.trung.coinpricetracker.CoinPriceTrackerApplication - Starting CoinPriceTrackerApplication using Java 17.0.12 with PID 2672 (D:\coin-price-tracker\coin-price-tracker\target\classes started by admin in D:\coin-price-tracker)
+2026-06-26 11:11:28 [main] INFO  com.trung.coinpricetracker.CoinPriceTrackerApplication - No active profile set, falling back to 1 default profile: "default"
+2026-06-26 11:11:28 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-06-26 11:11:28 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-06-26 11:11:28 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.55]
+2026-06-26 11:11:28 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-06-26 11:11:29 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-06-26 11:11:29 [main] INFO  com.trung.coinpricetracker.CoinPriceTrackerApplication - Started CoinPriceTrackerApplication in 1.63 seconds (process running for 2.264)
+2026-06-26 11:11:29 [main] INFO  com.trung.coinpricetracker.CoinPriceTrackerApplication - Hệ thống Coin Tracker đã khởi động thành công!
+2026-06-26 11:15:19 [main] INFO  com.trung.coinpricetracker.CoinPriceTrackerApplication - Starting CoinPriceTrackerApplication using Java 17.0.12 with PID 15936 (D:\coin-price-tracker\coin-price-tracker\target\classes started by admin in D:\coin-price-tracker)
+2026-06-26 11:15:19 [main] INFO  com.trung.coinpricetracker.CoinPriceTrackerApplication - No active profile set, falling back to 1 default profile: "default"
+2026-06-26 11:15:20 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-06-26 11:15:20 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-06-26 11:15:20 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.55]
+2026-06-26 11:15:20 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-06-26 11:15:20 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-06-26 11:15:20 [main] INFO  com.trung.coinpricetracker.CoinPriceTrackerApplication - Started CoinPriceTrackerApplication in 1.624 seconds (process running for 2.234)
+2026-06-26 11:15:20 [main] INFO  com.trung.coinpricetracker.CoinPriceTrackerApplication - Hệ thống Coin Tracker đã khởi động thành công!
+2026-06-26 11:16:03 [main] INFO  com.trung.coinpricetracker.CoinPriceTrackerApplication - Starting CoinPriceTrackerApplication using Java 17.0.12 with PID 4324 (D:\coin-price-tracker\coin-price-tracker\target\classes started by admin in D:\coin-price-tracker)
+2026-06-26 11:16:04 [main] INFO  com.trung.coinpricetracker.CoinPriceTrackerApplication - No active profile set, falling back to 1 default profile: "default"
+2026-06-26 11:16:04 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-06-26 11:16:04 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-06-26 11:16:04 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.55]
+2026-06-26 11:16:04 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-06-26 11:16:05 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-06-26 11:16:05 [main] INFO  com.trung.coinpricetracker.CoinPriceTrackerApplication - Started CoinPriceTrackerApplication in 1.692 seconds (process running for 2.363)
+2026-06-26 11:16:05 [main] INFO  com.trung.coinpricetracker.CoinPriceTrackerApplication - Hệ thống Coin Tracker đã khởi động thành công!

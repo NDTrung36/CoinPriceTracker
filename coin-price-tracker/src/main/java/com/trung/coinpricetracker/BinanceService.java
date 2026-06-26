@@ -1,11 +1,18 @@
 package com.trung.coinpricetracker;
 
+import jakarta.annotation.PostConstruct;
 import lombok.extern.log4j.Log4j2;
-import org.springframework.scheduling.annotation.Async;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import retrofit2.Response;
 
 import java.io.IOException;
+import java.util.List;
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.TimeUnit;
 
 @Service
 @Log4j2
@@ -14,79 +21,125 @@ public class BinanceService {
     private final BinanceApi binanceApi;
     private final TelegramApi telegramApi;
 
-    private final String BOT_TOKEN = "8984573120:AAHNUacQ6wk-dExt-EX1oQz7VpbDQrzJkzE";
-    private final String CHAT_ID = "7672916303";
+    @Value("${telegram.bot.token}")
+    private String botToken;
+
+    @Value("${telegram.chat.id}")
+    private String chatId;
+
+    @Value("${app.coins}")
+    private List<String> coinsToTrack;
+
+    @Value("${app.alert.threshold}")
+    private double alertThreshold;
+
+    // Map chứa giá mới nhất do các luồng Worker cập nhật (Thread-safe)
+    private final Map<String, Double> currentPricesMap = new ConcurrentHashMap<>();
+
+    // Map chứa giá tại thời điểm gửi Telegram lần cuối cùng
+    private final Map<String, Double> lastAlertedPricesMap = new ConcurrentHashMap<>();
 
     public BinanceService(BinanceApi binanceApi, TelegramApi telegramApi) {
         this.binanceApi = binanceApi;
         this.telegramApi = telegramApi;
     }
 
-    @Async
-    public void trackCoinPriceContinuously(String coinSymbol) {
-        Double lastPrice = null;
+    // @PostConstruct ra lệnh cho Spring chạy hàm này ngay sau khi Service được khởi tạo xong
+    @PostConstruct
+    public void startTrackingSystem() {
+        // Khởi tạo ThreadPool có số luồng = Số lượng coin + 1 luồng để gửi Telegram
+        int threadCount = coinsToTrack.size() + 1;
+        ScheduledExecutorService executorService = Executors.newScheduledThreadPool(threadCount);
 
-        while (true) {
-            try {
-                //dùng execute() gọi mạng đồng bộ
-                //Response<CoinPrice> response = binanceApi.getCoinPrice(coinSymbol).execute();
-                // Bước 1: Gọi hàm để tạo ra đối tượng Call (chưa chạy mạng)
-                retrofit2.Call<CoinPrice> coinPriceCall = binanceApi.getCoinPrice(coinSymbol);
+        log.info("Khởi động hệ thống ThreadPool với {} luồng...", threadCount);
 
-                // Bước 2: Thực thi đối tượng Call đó để lấy về Response (chạy mạng đồng bộ)
-                Response<CoinPrice> response = coinPriceCall.execute();
+        // 1. Phân công các luồng Worker (Producers) đi lấy giá mỗi 3 giây
+        for (String coin : coinsToTrack) {
+            executorService.scheduleAtFixedRate(() -> fetchCoinPrice(coin), 0, 3, TimeUnit.SECONDS);
+        }
 
+        // 2. Phân công 1 luồng Reporter (Consumer) đi kiểm tra biến động và gửi Telegram mỗi 5 giây
+        executorService.scheduleAtFixedRate(this::checkAndReportPrices, 5, 5, TimeUnit.SECONDS);
+    }
 
-                if (response.isSuccessful() && response.body() != null) {
-                    CoinPrice coinPrice = response.body();
-                    double currentPrice = Double.parseDouble(coinPrice.getPrice());
+    // Nhiệm vụ của Worker: Lấy giá và cất vào Map
+    private void fetchCoinPrice(String coinSymbol) {
+        try {
+            Response<CoinPrice> response = binanceApi.getCoinPrice(coinSymbol).execute();
 
-                    if (lastPrice != null && currentPrice != lastPrice) {
-                        log.warn("🚨 PHÁT HIỆN BIẾN ĐỘNG GIÁ (RETROFIT): {} từ {} -> {}", coinSymbol, lastPrice, currentPrice);
-                        sendTelegramMessage(coinSymbol, lastPrice, currentPrice);
-                    }
-                    else {
-                        log.info("Giá {} không đổi (Retrofit): {}", coinSymbol, currentPrice);
-                    }
-                    lastPrice = currentPrice;
-                }
-                else {
-                    log.error("Binance trả về lỗi HTTP: {} - {}", response.code(), response.message());
-                }
+            if (response.isSuccessful() && response.body() != null) {
+                double currentPrice = Double.parseDouble(response.body().getPrice());
 
-                Thread.sleep(3000);
+                // Cập nhật giá mới nhất vào kho chứa chung
+                currentPricesMap.put(coinSymbol, currentPrice);
 
+                // Ghi nhận lần đầu tiên để làm mốc so sánh
+                lastAlertedPricesMap.putIfAbsent(coinSymbol, currentPrice);
+
+                log.info("[Lấy giá] {} = {}", coinSymbol, currentPrice);
+            } else {
+                log.error("Lỗi API Binance cho {}: {}", coinSymbol, response.code());
             }
-            catch (IOException e) {
-                log.error("Lỗi kết nối mạng khi gọi Retrofit cho {}: {}", coinSymbol, e.getMessage());
-                try { Thread.sleep(3000); }
-                catch (InterruptedException ie) { Thread.currentThread().interrupt(); }
-            }
-            catch (Exception e) {
-                log.error("Lỗi xử lý luồng {}: {}", coinSymbol, e.getMessage());
-                try { Thread.sleep(3000); }
-                catch (InterruptedException ie) { Thread.currentThread().interrupt(); }
-            }
+        } catch (IOException e) {
+            log.error("Lỗi mạng khi lấy giá {}: {}", coinSymbol, e.getMessage());
+        } catch (Exception e) {
+            log.error("Lỗi luồng Worker {}: {}", coinSymbol, e.getMessage());
         }
     }
 
-    private void sendTelegramMessage(String symbol, double oldPrice, double newPrice) {
-        String state = (newPrice > oldPrice) ? "📈 TĂNG" : "📉 GIẢM";
-        String content = String.format("Thông báo: %s vừa %s! Giá cũ: %.4f -> Giá mới: %.4f",
-                symbol, state, oldPrice, newPrice);
+    // Nhiệm vụ của Reporter: Đọc Map, tính %, gom tin nhắn
+    private void checkAndReportPrices() {
+        if (currentPricesMap.isEmpty()) return; // Chưa có dữ liệu thì bỏ qua
 
-        try {
-            Response<Object> response = telegramApi.sendMessage(BOT_TOKEN, CHAT_ID, content).execute();
+        StringBuilder alertMessage = new StringBuilder("🚨 CẢNH BÁO BIẾN ĐỘNG GIÁ (>" + alertThreshold + "%)\n\n");
+        boolean hasChanges = false;
 
-            if (response.isSuccessful()) {
-                log.info("[TELEGRAM-RETROFIT] Đã gửi thông báo thành công cho {}", symbol);
-            }
-            else {
-                log.error("[LỖI TELEGRAM-RETROFIT] Telegram trả về lỗi mã: {} - {}", response.code(), response.message());
+        // Duyệt qua kho chứa giá hiện tại
+        for (Map.Entry<String, Double> entry : currentPricesMap.entrySet()) {
+            String symbol = entry.getKey();
+            double currentPrice = entry.getValue();
+            double lastAlertedPrice = lastAlertedPricesMap.get(symbol);
+
+            // Thuật toán tính phần trăm chênh lệch
+            double percentChange = Math.abs((currentPrice - lastAlertedPrice) / lastAlertedPrice) * 100.0;
+
+            // Nếu mức biến động vượt ngưỡng cho phép
+            if (percentChange >= alertThreshold) {
+                hasChanges = true;
+
+                // 1. Tách logic kiểm tra tăng/giảm ra một biến riêng cho rõ ràng
+                boolean isUp = currentPrice > lastAlertedPrice;
+
+                // 2. Định nghĩa trạng thái và dấu tương ứng
+                String state = isUp ? "🟢 TĂNG" : "🔴 GIẢM";
+                String sign = isUp ? "+" : "-";
+
+                alertMessage.append(String.format("• %s %s\n", symbol, state))
+                        .append(String.format("  Cũ: %f\n", lastAlertedPrice))
+                        // 3. Thay dấu + cứng thành %s để truyền biến sign vào
+                        .append(String.format("  Mới: %f (%s%.2f%%)\n\n", currentPrice, sign, percentChange));
+
+                // Cập nhật lại mốc giá đã báo cáo
+                lastAlertedPricesMap.put(symbol, currentPrice);
             }
         }
-        catch (IOException e) {
-            log.error("[LỖI MẠNG TELEGRAM-RETROFIT] Không thể kết nối tới Telegram: {}", e.getMessage());
+
+        // Nếu có ít nhất 1 coin biến động vượt ngưỡng, bắn DUY NHẤT 1 tin nhắn Telegram
+        if (hasChanges) {
+            sendTelegramMessage(alertMessage.toString());
+        }
+    }
+
+    private void sendTelegramMessage(String content) {
+        try {
+            Response<Object> response = telegramApi.sendMessage(botToken, chatId, content).execute();
+            if (response.isSuccessful()) {
+                log.warn("[TELEGRAM] Đã gửi báo cáo gom nhóm thành công!");
+            } else {
+                log.error("[TELEGRAM LỖI] {}", response.code());
+            }
+        } catch (IOException e) {
+            log.error("[TELEGRAM LỖI MẠNG] {}", e.getMessage());
         }
     }
 }
